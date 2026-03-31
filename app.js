@@ -123,8 +123,5 @@ const start = async () => {
     process.exit(1);
   }
 };
-
-if (process.argv[1] === new URL(import.meta.url).pathname) {
-  start();
-}
+start();
 export { app };
