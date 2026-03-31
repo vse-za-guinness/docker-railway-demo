@@ -67,7 +67,7 @@ app.get('/api/jobs', async (request, reply) => {
     const results = response.data.results || [];
     return {
       query: searchQuery,
-      count: results.length,
+      count: 0,
       results: results.map(r => ({
         title: r.name,
         url: r.url,
